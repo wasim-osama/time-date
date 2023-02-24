@@ -14,19 +14,20 @@ function displayTIme() {
     let min = date.getMinutes().toLocaleString('bn-BD');
     let hrs = date.getHours();
     let sess = '';
-    if (hrs == 4 && hrs < 7) {
+    if (hrs == 4 || hrs < 7) {
         sess = 'ভোর'
-    } else if (hrs == 7 && hrs < 10) {
+    } else if (hrs == 7 || hrs < 10) {
         sess = 'সকাল'
-    } else if (hrs == 10 && hrs < 15) {
+    } else if (hrs == 10 || hrs < 15) {
         sess = 'বেলা'
-    } else if (hrs == 15 && hrs < 18) {
+    } else if (hrs == 15 || hrs < 18) {
         sess = 'বিকাল'
-    } else if (hrs == 18 && hrs < 21) {
+    } else if (hrs == 18 || hrs < 20) {
         sess = 'সন্ধ্যা'
     } else {
         sess = 'রাত'
     }
+    console.log(hrs)
     document.querySelector('.hr').innerHTML = hour;
     document.querySelector('.min').innerHTML = min;
     document.querySelector('.session').innerHTML = sess;
