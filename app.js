@@ -22,7 +22,7 @@ function displayTIme() {
         sess = 'বেলা'
     } else if (hrs == 15 && hrs < 18) {
         sess = 'বিকাল'
-    } else if (hrs == 18 && hrs < 20) {
+    } else if (hrs == 18 && hrs < 21) {
         sess = 'সন্ধ্যা'
     } else {
         sess = 'রাত'
